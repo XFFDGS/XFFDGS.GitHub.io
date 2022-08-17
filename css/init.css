@@ -1,0 +1,23 @@
+/*初始化预设，清除所有边距离，预设字体使用，列表样式，超链接样式*/
+body,div,span,object,h1,h2,h3,h4,h5,h6,p,ul,label,input,dl,ul,dt,dd,pre,form,fieldset,legend
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{  
+    
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", 
+    "Heiti SC", "MicrosoftYaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+ul,ol,li{ list-style: none; }
+a{text-decoration: none;}
+
+.clear{
+    overflow: hidden;
+    clear: both;
+}
+
+html {
+    font-size: 10px;
+}

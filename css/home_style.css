@@ -1,0 +1,101 @@
+/*引入字体文件*/
+@font-face {
+    font-family: 'PangMenZhengDao';
+    src: url(../font/PangMenZhengDaoBiaoTiTi-1.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'DINPro-Regular';
+    src: url(../font/DINPro-Regular.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'DINPro-Medium';
+    src: url(../font/DINPro-Medium.otf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'DINPro-Bold';
+    src: url(../font/DINPro-Bold.otf);
+    font-weight: bold;
+}
+/*大的渐变标题文字*/
+.big-tittle{
+    font-family: "PangMenZhengDao";
+    font-size: 14.4rem;
+    background: linear-gradient(239deg, #A18CFF 0%, #FFBAC3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height:15.2rem;
+    height: 15.2rem;
+    margin-top: 8vh;
+    margin-bottom: 1vh;
+}
+.small-tittle{
+    font-family: "PangMenZhengDao";
+    font-size: 4rem;
+    color: #E6E9F0;
+
+}
+/*背景灰色*/
+.background{
+    background-color: #2E2F32;
+    width: 100%;
+    height: 100vh;
+}
+.center-wrap{
+    text-align: center;
+    box-sizing: border-box;
+    margin: o auto;
+}
+
+/*八个功能链接的栅格*/
+.kuanjia {
+    margin: 10vh 10vw 10vh 14vw ;
+    width: 76vw;
+    
+    /*border: 1px solid #E4E7ED;*/
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows:repeat(2, minmax(64px, 12vh));
+    grid-template-columns: repeat(4, minmax(200px, 25%));
+    row-gap: 1rem;
+}
+/*图标和文字的容器*/
+.icon-div{
+    box-sizing: border-box;
+    /*background-color: #ffffff;*/
+    border-radius: 8px;   
+    padding: 12px 16px 12px 16px;
+    
+}
+.icon-div:hover{
+    background-color: #36373A;
+}
+/*链接文字*/
+.zhenwen1{
+    margin-left: 1rem;
+    font-family: "DINPro-Medium";
+    font-size: 1.8rem;
+    color: #88919E;
+    
+    
+    display: inline-block;
+    position: relative;
+    
+    line-height:1.8rem;
+    top:50%;
+    margin-top:-0.9rem;
+    vertical-align:top; 
+}
+/*设置图标*/
+.iconplace{
+    font-size: 36px;
+    display: inline-block;
+    position: relative;
+    
+    line-height:36px;
+    top:50%;
+    margin-top:-18px;
+    vertical-align:top; 
+}
