@@ -13,11 +13,45 @@ body
 ul,ol,li{ list-style: none; }
 a{text-decoration: none;}
 
+/*清除浮动组件*/
 .clear{
     overflow: hidden;
     clear: both;
+    
 }
+/*定义全局背景色*/
+body{ background:#2E2F32} 
 
+/*定义1rem大小*/
 html {
     font-size: 10px;
 }
+
+/*隐藏横向滑动条*/
+:root {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+/*定义滑动条大小*/
+
+
+::-webkit-scrollbar {
+    
+    width: 10px; /* 纵向滚动条的大小 */
+    height: 10px; /* 横向滚动条的大小 */
+}
+/* 设置滚动条可拖动滑块的样式 */
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    
+    background: #54575E;
+}
+/* 设置外层轨道的样式 */
+::-webkit-scrollbar-track {
+    
+    border-radius: 0;
+    background: #2E2F32;
+}
+
+
