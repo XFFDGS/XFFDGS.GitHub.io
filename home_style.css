@@ -1,0 +1,265 @@
+/*引入字体文件*/
+@font-face {
+    font-family: 'PangMenZhengDao';
+    src: url(../font/PangMenZhengDaoBiaoTiTi-1.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'DINPro-Regular';
+    src: url(../font/DINPro-Regular.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'DINPro-Medium';
+    src: url(../font/DINPro-Medium.otf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'DINPro-Bold';
+    src: url(../font/DINPro-Bold.otf);
+    font-weight: bold;
+}
+/*导航栏背景*/
+
+.background-bar{
+    position: fixed;
+    float: left;
+    
+    width: 100%;
+    height: 64px;
+    background: rgba(52, 53, 56, 0.6);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 1px 0px 0px #4B4D53;
+}
+/*导航栏的栅格*/
+.kuanjia-bar {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 76vw;
+    display: grid;
+    grid-template-rows:64px;
+    grid-template-columns: minmax(200px, 25%) minmax(500px, 75%);
+    column-gap: 5rem; 
+}
+.logo{
+    font-size: 2.2rem;
+    font-family: "PangMenZhengDao";
+    color: #E6E9F0;
+    display: inline-block;
+    position: relative;
+    
+    line-height:2.2rem;
+    top:50%;
+    margin-top:-1.1rem;
+    vertical-align:top; 
+
+    height:2.2rem;
+    overflow: hidden;
+    
+}
+
+.logo .show:hover {/*设置特殊效果*/
+	padding-top: 2.2rem;
+    
+}
+.logo .hover-show {
+	margin-top: -4.4rem;
+    
+}
+
+.nav-bar{
+    font-size: 2.2rem;
+    
+    
+    display: inline-block;/*这个设定是为了整体上下居中*/
+    position: relative;  
+    line-height:2.2rem;
+    top:50%;
+    margin-top:-1.1rem;
+    vertical-align:top; 
+
+}
+.nav-bar li{
+    float: right;/*浮动。li才能一排*/
+}
+.nav-bar a{
+    color: #E6E9F0;
+    font-family: "DINPro-Regular";
+    margin-left: 80px;
+    display: inline-block;/*动画需要变成这个模式*/
+    transition: 1s;
+}
+.nav-bar a:hover{
+    transition: 1s;
+    transform: translateY(-6px);
+    
+}
+
+
+/*大的渐变标题文字*/
+.big-tittle{
+    font-family: "PangMenZhengDao";
+    font-size: 14.4rem;
+    /*background: linear-gradient(239deg, #A18CFF 0%, #FFBAC3 100%);*/
+    background: linear-gradient(239deg, #BAFFC3 0%, #8DBAFE 33%,#A38DFE 66%,#FAB8C6 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 9vh 0 0 0;
+
+    animation-name: hd;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;/*动画循环*/
+    animation-direction: alternate;
+    /*定义使用 animation-direction 控制动画运行的方向。
+    normal	从 0%到 100%运行动画
+    reverse	从 100%到 0%运行动画
+    alternate	先从 0%到 100%，然后从 100%到 0%
+    alternate-reverse	先从 100%到 0%，然后从 0%到 100%*/
+    
+}
+/*背景变化的动画*/
+@keyframes hd {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    
+    100% {
+        background-position: 100% 100%;
+    }
+
+}
+
+.small-tittle{
+    font-family: "PangMenZhengDao";
+    font-size: 4rem;
+    color: #E6E9F0;
+
+}
+/*背景灰色*/
+.background-normal{
+    background-color: #2E2F32;
+    width: 100vw;
+    height: 120vh;
+    
+}
+.center-wrap{
+    
+    text-align: center;
+    box-sizing: border-box;
+    margin: o auto;
+}
+
+/*八个功能链接的栅格*/
+.kuanjia {
+    box-sizing: border-box;
+    margin: 14vh 10vw 20vh 14vw ;
+    width: 76vw;
+    
+    /*border: 1px solid #E4E7ED;*/
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows:repeat(2, minmax(64px, 10vh));
+    grid-template-columns: repeat(4, minmax(200px, 25%));
+    row-gap: 1rem;
+}
+/*图标和文字的容器*/
+.icon-div{
+    box-sizing: border-box;
+    /*background-color: #ffffff;*/
+    border-radius: 8px;   
+    padding: 12px 16px 12px 16px;
+    transition: 0.5s;
+    
+}
+.icon-div:hover{
+    background-color: #36373A;
+}
+/*链接文字*/
+.zhenwen1{
+    margin-left: 1rem;
+    font-family: "DINPro-Medium";
+    font-size: 1.8rem;
+    color: #88919E;
+    
+    
+    display: inline-block;
+    position: relative;
+    vertical-align:top; 
+    line-height:1.8rem;
+    top:50%;
+    margin-top:-0.9rem;
+    
+    transition: 0.4s;
+}
+
+.zhenwen1:hover{
+    transition: 0.4s;
+    transform: translateX(4px);
+
+}
+/*设置图标*/
+.iconplace{
+    font-size: 36px;
+    display: inline-block;
+    position: relative;
+    
+    line-height:36px;
+    top:50%;
+    margin-top:-18px;
+    vertical-align:top; 
+}
+/*底部说明的样式栅格*/
+.bottom-color{
+    height: 268px;
+    background: #313234;
+}
+.bottom-bar {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 76vw;
+    display: grid;
+    grid-template-rows:268px;
+    grid-template-columns: 178px minmax(250px, 75%) minmax(200px, 25%);
+    column-gap: 4rem; 
+    
+}
+.bottom-left{
+    padding: 46px 0px 46px 0px;
+    
+    
+}
+.head-box{
+    float: left;
+    height: 178px;
+    width: 178px;
+    background: #3B3C3E;
+    border-radius: 17px;
+}
+
+.bottom-left ul li{
+    
+    
+    margin-bottom: 1.4rem;
+}
+.bottom-right{
+    padding: 46px 0px 46px 0px;
+    
+    
+    
+    display: inline-block;
+    position: relative;
+    
+    vertical-align:top; 
+
+}
+.bottom-right ul{
+    float: right;
+    text-align:right;
+}
+.bottom-right ul li{
+    
+    
+    margin-bottom: 1.4rem;
+}
