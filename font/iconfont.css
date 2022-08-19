@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3592726 */
+  src: url('iconfont.eot?t=1660870411591'); /* IE9 */
+  src: url('iconfont.eot?t=1660870411591#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('iconfont.woff2?t=1660870411591') format('woff2'),
+       url('iconfont.woff?t=1660870411591') format('woff'),
+       url('iconfont.ttf?t=1660870411591') format('truetype'),
+       url('iconfont.svg?t=1660870411591#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ZCOOL:before {
+  content: "\e653";
+}
+
+.icon-BILIBILI:before {
+  content: "\e64b";
+}
+
+.icon-ECUSTYAN:before {
+  content: "\e64c";
+}
+
+.icon-GOOGLE:before {
+  content: "\e64d";
+}
+
+.icon-BAIDU:before {
+  content: "\e64e";
+}
+
+.icon-SCI-HUB:before {
+  content: "\e64f";
+}
+
+.icon-man:before {
+  content: "\e650";
+}
+
+.icon-MASTERGO:before {
+  content: "\e651";
+}
+
+.icon-ZHIWANG:before {
+  content: "\e652";
+}
+
+.icon-btn-add:before {
+  content: "\e60f";
+}
+
+.icon-btn-delete:before {
+  content: "\e610";
+}
+
+.icon-btn-export2:before {
+  content: "\e611";
+}
+
+.icon-btn-edit:before {
+  content: "\e612";
+}
+
+.icon-btn-inport2:before {
+  content: "\e613";
+}
+
+.icon-btn-march:before {
+  content: "\e614";
+}
+
+.icon-btn-export1:before {
+  content: "\e615";
+}
+
+.icon-btn-refresh:before {
+  content: "\e616";
+}
+
+.icon-btn-upload:before {
+  content: "\e618";
+}
+
+.icon-btn-search:before {
+  content: "\e619";
+}
+
