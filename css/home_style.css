@@ -214,6 +214,7 @@
 .bottom-color{
     height: 268px;
     background: #313234;
+    
 }
 .bottom-bar {
     box-sizing: border-box;
@@ -262,4 +263,28 @@
     
     
     margin-bottom: 1.4rem;
+}
+/*作品集*/
+.PORTFOLIO-bg{
+    box-sizing: border-box;
+    
+    width: 100%;
+    float: left;
+    /*border: 1px solid #E4E7ED;*/
+    
+    display: grid;
+    grid-template-rows:repeat(2, auto);
+    grid-template-columns: repeat(1, 100%);
+    
+
+}
+.pic{
+    width: 100%;
+    
+    
+}
+.pic img{
+  width: 100%;
+  
+  object-fit: cover;
 }

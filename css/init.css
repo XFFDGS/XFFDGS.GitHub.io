@@ -7,7 +7,7 @@ body,div,span,object,h1,h2,h3,h4,h5,h6,p,ul,label,input,dl,ul,dt,dd,pre,form,fie
 body
 {  
     
-    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", 
+    font-family: "Helvetica Neue", Helvetica, Arial,  "Source Han Sans CN","PingFang SC","Hiragino Sans GB", 
     "Heiti SC", "MicrosoftYaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 ul,ol,li{ list-style: none; }
