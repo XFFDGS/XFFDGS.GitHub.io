@@ -19,8 +19,9 @@
     src: url(../font/DINPro-Bold.otf);
     font-weight: bold;
 }
-/*导航栏背景*/
 
+
+/*导航栏背景*/
 .background-bar{
     position: fixed;
     float: left;
@@ -31,75 +32,139 @@
     backdrop-filter: blur(20px);
     box-shadow: 0px 1px 0px 0px #4B4D53;
 }
-/*导航栏的栅格*/
-.kuanjia-bar {
-    box-sizing: border-box;
-    margin: 0 auto;
-    width: 76vw;
-    display: grid;
-    grid-template-rows:64px;
-    grid-template-columns: minmax(200px, 25%) minmax(500px, 75%);
-    column-gap: 5rem; 
-}
-.logo{
-    font-size: 2.2rem;
-    font-family: "PangMenZhengDao";
-    color: #E6E9F0;
-    display: inline-block;
-    position: relative;
-    
-    line-height:2.2rem;
-    top:50%;
-    margin-top:-1.1rem;
-    vertical-align:top; 
 
-    height:2.2rem;
-    overflow: hidden;
-    
-}
-
-.logo .show:hover {/*设置特殊效果*/
-	padding-top: 2.2rem;
-    
-}
-.logo .hover-show {
-	margin-top: -4.4rem;
-    
-}
-
-.nav-bar{
-    font-size: 2.2rem;
-    
-    
-    display: inline-block;/*这个设定是为了整体上下居中*/
-    position: relative;  
-    line-height:2.2rem;
-    top:50%;
-    margin-top:-1.1rem;
-    vertical-align:top; 
-
-}
 .nav-bar li{
     float: right;/*浮动。li才能一排*/
 }
-.nav-bar a{
-    color: #E6E9F0;
-    font-family: "DINPro-Regular";
-    margin-left: 80px;
-    display: inline-block;/*动画需要变成这个模式*/
-    transition: 1s;
-}
+
 .nav-bar a:hover{
     transition: 1s;
     transform: translateY(-6px);
     
 }
+@media (max-width: 568px) {
 
+    /** 窗口宽度小于500像素的样式 **/
+    .kuanjia-bar {
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 90vw;
+        display: grid;
+        grid-template-rows:64px;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 0rem; 
+    }
+    .nav-bar a{
+        color: #E6E9F0;
+        font-family: "DINPro-Regular";
+        margin-left: 20px;
+        display: inline-block;/*动画需要变成这个模式*/
+        transition: 1s;
+    }
+
+    .logo{/*左上logo标识的样式*/
+        font-size: 1.6rem;
+        font-family: "PangMenZhengDao";
+        color: #E6E9F0;
+        display: inline-block;
+        position: relative;
+        
+        line-height:1,6rem;
+        top:50%;
+        margin-top:-0.8rem;
+        vertical-align:top; 
+    
+        height:1.6rem;
+        overflow: hidden;
+        
+    }
+
+    .logo .hover-show {
+        display: none;
+        
+    }
+    
+    .nav-bar{
+        font-size: 1.6rem;
+        
+        
+        display: inline-block;/*这个设定是为了整体上下居中*/
+        position: relative;  
+        line-height:1.6rem;
+        top:50%;
+        margin-top:-0.8rem;
+        vertical-align:top; 
+    
+    }
+
+}
+
+@media (min-width: 568px) {
+
+    /** 窗口宽度大于500像素的样式 **/
+    /*导航栏的栅格*/
+    .kuanjia-bar {
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 76vw;
+        display: grid;
+        grid-template-rows:64px;
+        grid-template-columns: minmax(200px, 25%) minmax(500px, 75%);
+        column-gap: 5rem; 
+    }
+    .nav-bar a{
+        color: #E6E9F0;
+        font-family: "DINPro-Regular";
+        margin-left: 80px;
+        display: inline-block;/*动画需要变成这个模式*/
+        transition: 1s;
+    }
+
+    .logo{
+        font-size: 2.2rem;
+        font-family: "PangMenZhengDao";
+        color: #E6E9F0;
+        display: inline-block;
+        position: relative;
+        
+        line-height:2.2rem;
+        top:50%;
+        margin-top:-1.1rem;
+        vertical-align:top; 
+    
+        height:2.2rem;
+        overflow: hidden;
+        
+    }
+    
+    .logo .show:hover {/*设置特殊效果*/
+        padding-top: 2.2rem;
+        
+    }
+    .logo .hover-show {
+        margin-top: -4.4rem;
+        
+    }
+    
+    .nav-bar{
+        font-size: 2.2rem;
+        
+        
+        display: inline-block;/*这个设定是为了整体上下居中*/
+        position: relative;  
+        line-height:2.2rem;
+        top:50%;
+        margin-top:-1.1rem;
+        vertical-align:top; 
+    
+    }
+}
 
 /*大的渐变标题文字*/
 .big-tittle{
     font-family: "PangMenZhengDao";
-    font-size: 14.4rem;
+    
+    
     /*background: linear-gradient(239deg, #A18CFF 0%, #FFBAC3 100%);*/
     background: linear-gradient(239deg, #BAFFC3 0%, #8DBAFE 33%,#A38DFE 66%,#FAB8C6 100%);
     background-size: 200% 200%;
@@ -118,6 +183,19 @@
     alternate-reverse	先从 100%到 0%，然后从 0%到 100%*/
     
 }
+@media (min-width: 568px) {
+    .big-tittle{
+        font-size: 14.4rem;
+
+    }
+    
+}
+@media (max-width: 568px) {
+    .big-tittle{
+        font-size: 7rem;
+
+    }
+}
 /*背景变化的动画*/
 @keyframes hd {
     0% {
@@ -133,9 +211,19 @@
 
 .small-tittle{
     font-family: "PangMenZhengDao";
-    font-size: 4rem;
     color: #E6E9F0;
 
+}
+@media (min-width: 568px) {
+    .small-tittle{
+        font-size: 4rem;
+    }
+    
+}
+@media (max-width: 568px) {
+    .small-tittle{
+        font-size: 2rem;
+    }
 }
 /*背景灰色*/
 .background-normal{
