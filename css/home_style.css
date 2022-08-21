@@ -170,8 +170,6 @@
     background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 9vh 0 0 0;
-
     animation-name: hd;
     animation-duration: 3s;
     animation-iteration-count: infinite;/*动画循环*/
@@ -183,16 +181,20 @@
     alternate-reverse	先从 100%到 0%，然后从 0%到 100%*/
     
 }
-@media (min-width: 568px) {
+@media (min-width: 568px) {/*电脑*/
     .big-tittle{
         font-size: 14.4rem;
+        margin: 9vh 0 0 0;
+
 
     }
     
 }
-@media (max-width: 568px) {
+@media (max-width: 568px) {/*手机*/
     .big-tittle{
         font-size: 7rem;
+        margin: 4vh 0 0 0;
+
 
     }
 }
@@ -239,19 +241,7 @@
     margin: o auto;
 }
 
-/*八个功能链接的栅格*/
-.kuanjia {
-    box-sizing: border-box;
-    margin: 14vh 10vw 20vh 14vw ;
-    width: 76vw;
-    
-    /*border: 1px solid #E4E7ED;*/
-    border-radius: 8px;
-    display: grid;
-    grid-template-rows:repeat(2, minmax(64px, 10vh));
-    grid-template-columns: repeat(4, minmax(200px, 25%));
-    row-gap: 1rem;
-}
+
 /*图标和文字的容器*/
 .icon-div{
     box-sizing: border-box;
@@ -264,22 +254,16 @@
 .icon-div:hover{
     background-color: #36373A;
 }
-/*链接文字*/
-.zhenwen1{
-    margin-left: 1rem;
-    font-family: "DINPro-Medium";
-    font-size: 1.8rem;
-    color: #88919E;
-    
+/*设置图标*/
+.iconplace{
     
     display: inline-block;
     position: relative;
-    vertical-align:top; 
-    line-height:1.8rem;
+
+    line-height:30px;
     top:50%;
-    margin-top:-0.9rem;
-    
-    transition: 0.4s;
+    margin-top:-15px;
+    vertical-align:top; 
 }
 
 .zhenwen1:hover{
@@ -287,17 +271,69 @@
     transform: translateX(4px);
 
 }
-/*设置图标*/
-.iconplace{
-    font-size: 36px;
-    display: inline-block;
-    position: relative;
-    
-    line-height:36px;
-    top:50%;
-    margin-top:-18px;
-    vertical-align:top; 
+
+@media (min-width: 568px) {
+    .kuanjia {/*八个功能的栅格*/
+        box-sizing: border-box;
+        margin: 14vh 10vw 20vh 14vw ;
+        width: 76vw;
+        
+        /*border: 1px solid #E4E7ED;*/
+        border-radius: 8px;
+        display: grid;
+        grid-template-rows:repeat(2, minmax(64px, 10vh));
+        grid-template-columns: repeat(4, minmax(200px, 25%));
+        row-gap: 1rem;
+    }
+   
+    /*链接文字*/
+    .zhenwen1{
+        margin-left: 1rem;
+        font-family: "DINPro-Medium";
+        font-size: 1.8rem;
+        color: #88919E;
+
+        display: inline-block;
+        position: relative;
+        vertical-align:top; 
+        line-height:1.8rem;
+        top:50%;
+        margin-top:-0.9rem;
+
+        transition: 0.4s;
+    }
 }
+@media (max-width: 568px) {  
+    /*手机;*/
+    .kuanjia {
+        box-sizing: border-box;
+        margin: 6vh 5vw 10vh 5vw ;
+        width: 90vw;
+      
+        border-radius: 8px;
+        display: grid;
+        grid-template-rows:repeat(4, minmax(64px, 10vh));
+        grid-template-columns: repeat(2, 50%);
+        row-gap: 1rem;
+    }
+    /
+    .zhenwen1{
+        margin-left: 1rem;
+        font-family: "DINPro-Medium";
+        font-size: 1.6rem;
+        color: #88919E;
+        
+        display: inline-block;
+        position: relative;
+        vertical-align:top; 
+        line-height:1.6rem;
+        top:50%;
+        margin-top:-0.8rem;
+        
+        transition: 0.4s;
+    }
+}
+
 /*底部说明的样式栅格*/
 .bottom-color{
     height: 268px;
