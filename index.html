@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <noscript><iframe src=*.html></iframe></noscript><!--禁止另存网页-->  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="user-scalable=0,width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
     
 </head>
 
-<body >
+<body onselectstart="return false" onpaste="return false" oncopy="return false;" oncut="return false;" oncontextmenu="return false;">
     
     <!--导航栏顶顶顶顶-->    
     <div class="clear">
@@ -197,12 +198,7 @@
      
     <script type='text/javascript'>
         //禁用右键（防止右键查看源代码） 
-        window.οncοntextmenu=function(){return false;} 
-        //禁止任何键盘敲击事件（防止F12和shift+ctrl+i调起开发者工具） 
-        window.onkeydown = window.onkeyup = window.onkeypress = function () { 
-            window.event.returnValue = false; 
-            return false; 
-        } 
+        window.oncontextmenu=function(){return false;} 
         
     </script> 
 
