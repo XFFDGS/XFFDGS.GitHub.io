@@ -402,9 +402,19 @@
     
 
 }
-.pic{
-    width: 100%;
+
+@media (min-width: 568px) {
+    .pic{
+        width: 76%;
+        margin: 0 auto;
+    }
     
+}
+@media (max-width: 568px) {  
+    .pic{
+        width: 100%;
+        margin: 0 auto;
+    }
     
 }
 .pic img{
