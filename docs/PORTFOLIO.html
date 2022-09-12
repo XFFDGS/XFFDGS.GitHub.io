@@ -12,7 +12,7 @@
     
 </head>
 
-<body >
+<body onselectstart="return false" onpaste="return false" oncopy="return false;" oncut="return false;" oncontextmenu="return false;">
     <!--导航栏-->   
     <div class="clear">
         <div class="background-bar">
@@ -189,7 +189,7 @@
     </div>
     <script type='text/javascript'>
         //禁用右键（防止右键查看源代码） 
-        //window.oncontextmenu=function(){return false;} 
+        window.oncontextmenu=function(){return false;} 
         
     </script> 
 </body>
